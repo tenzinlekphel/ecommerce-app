@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/tenzin/Desktop/Developer/Ecommerce-app/Ecommerce-app/GoogleService-Info.plist">
+   </FileRef>
+   <FileRef
       location = "self:Ecommerce-app.xcodeproj">
    </FileRef>
 </Workspace>
