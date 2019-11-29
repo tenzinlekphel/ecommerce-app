@@ -21,4 +21,16 @@ public let kImageName = "imageName"
 public let kObjectID = "objectId"
 
 
+//Item
+public let kCATEGORYID = "categoryId"
+public let kDESCRIPTION = "description"
+public let kPRICE = "price"
+public let kIMAGELINKS = "imageLinks"
+
+
+
+
+
+
+
 

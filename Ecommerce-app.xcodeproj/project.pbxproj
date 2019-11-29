@@ -21,6 +21,7 @@
 		B12F9DED238FFA7100DAB4E7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F9DEC238FFA7100DAB4E7 /* Category.swift */; };
 		B12F9DF0238FFBE000DAB4E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F9DEF238FFBE000DAB4E7 /* Constants.swift */; };
 		B1744CEF2390160400D940F3 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1744CEE2390160400D940F3 /* ItemsTableViewController.swift */; };
+		B1C1407C239174D700DD5F8C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1407B239174D700DD5F8C /* Item.swift */; };
 		C3668A8B3A6132EFB4D39224 /* Pods_Ecommerce_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEB18F0766DA9A90368EB43 /* Pods_Ecommerce_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		B12F9DEC238FFA7100DAB4E7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B12F9DEF238FFBE000DAB4E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B1744CEE2390160400D940F3 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		B1C1407B239174D700DD5F8C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				B12F9DEC238FFA7100DAB4E7 /* Category.swift */,
+				B1C1407B239174D700DD5F8C /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C1407C239174D700DD5F8C /* Item.swift in Sources */,
 				B111863F238EB9180050AA6E /* FirebaseCollectionReference.swift in Sources */,
 				B111861F238EAC510050AA6E /* AppDelegate.swift in Sources */,
 				B1118638238EB1980050AA6E /* CategoryCollectionViewCell.swift in Sources */,

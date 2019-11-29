@@ -163,7 +163,9 @@
                             <outlet property="delegate" destination="SQI-jG-lOt" id="up9-GV-1Vx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eUQ-cF-I0m"/>
+                    <navigationItem key="navigationItem" id="eUQ-cF-I0m">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="msq-oI-kSA"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4T-nB-2cm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
