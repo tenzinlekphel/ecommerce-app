@@ -21,6 +21,7 @@
 		B12F9DED238FFA7100DAB4E7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F9DEC238FFA7100DAB4E7 /* Category.swift */; };
 		B12F9DF0238FFBE000DAB4E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F9DEF238FFBE000DAB4E7 /* Constants.swift */; };
 		B1744CEF2390160400D940F3 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1744CEE2390160400D940F3 /* ItemsTableViewController.swift */; };
+		B195F56423954EDE005AD21C /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B195F56323954EDE005AD21C /* AddItemViewController.swift */; };
 		B1C1407C239174D700DD5F8C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1407B239174D700DD5F8C /* Item.swift */; };
 		C3668A8B3A6132EFB4D39224 /* Pods_Ecommerce_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEB18F0766DA9A90368EB43 /* Pods_Ecommerce_app.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		B12F9DEC238FFA7100DAB4E7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B12F9DEF238FFBE000DAB4E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B1744CEE2390160400D940F3 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		B195F56323954EDE005AD21C /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		B1C1407B239174D700DD5F8C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B1118635238EB0B50050AA6E /* CategoryCollectionViewController.swift */,
+				B195F56323954EDE005AD21C /* AddItemViewController.swift */,
 				B1744CEE2390160400D940F3 /* ItemsTableViewController.swift */,
 			);
 			path = "Main Views";
@@ -277,6 +280,7 @@
 				B1118621238EAC510050AA6E /* SceneDelegate.swift in Sources */,
 				B12F9DED238FFA7100DAB4E7 /* Category.swift in Sources */,
 				B12F9DF0238FFBE000DAB4E7 /* Constants.swift in Sources */,
+				B195F56423954EDE005AD21C /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

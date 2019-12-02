@@ -164,12 +164,97 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="eUQ-cF-I0m">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="msq-oI-kSA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="msq-oI-kSA">
+                            <connections>
+                                <segue destination="rtc-oT-Q0B" kind="show" identifier="itemToAddItemSeg" id="eBy-iJ-ze6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4T-nB-2cm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2601.449275362319" y="-350.22321428571428"/>
+        </scene>
+        <!--Add Item-->
+        <scene sceneID="uAS-SZ-mRJ">
+            <objects>
+                <viewController id="rtc-oT-Q0B" customClass="AddItemViewController" customModule="Ecommerce_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kyD-SW-aai">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-RS-884">
+                                <rect key="frame" x="20" y="103" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KJ-0r-4g8">
+                                <rect key="frame" x="20" y="145" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-BH-x6D">
+                                <rect key="frame" x="20" y="189" width="374" height="234"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="7b0-wi-U0O"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXY-mL-Ll3">
+                                <rect key="frame" x="16" y="433" width="119" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonPress:" destination="rtc-oT-Q0B" eventType="touchUpInside" id="uaL-je-UsS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="9Xa-BH-x6D" firstAttribute="leading" secondItem="NVF-rJ-QW5" secondAttribute="leading" constant="20" id="91E-3V-Unq"/>
+                            <constraint firstItem="NVF-rJ-QW5" firstAttribute="trailing" secondItem="Lx5-RS-884" secondAttribute="trailing" constant="20" id="B8M-8e-kDZ"/>
+                            <constraint firstItem="YXY-mL-Ll3" firstAttribute="centerY" secondItem="kyD-SW-aai" secondAttribute="centerY" id="Qgr-uX-LcA"/>
+                            <constraint firstItem="2KJ-0r-4g8" firstAttribute="top" secondItem="Lx5-RS-884" secondAttribute="bottom" constant="8" id="UWL-Sf-mK3"/>
+                            <constraint firstItem="NVF-rJ-QW5" firstAttribute="trailing" secondItem="9Xa-BH-x6D" secondAttribute="trailing" constant="20" id="Zmz-UQ-fHd"/>
+                            <constraint firstItem="2KJ-0r-4g8" firstAttribute="leading" secondItem="NVF-rJ-QW5" secondAttribute="leading" constant="20" id="hLF-f8-u4W"/>
+                            <constraint firstItem="Lx5-RS-884" firstAttribute="leading" secondItem="NVF-rJ-QW5" secondAttribute="leading" constant="20" id="hdu-i6-Szj"/>
+                            <constraint firstItem="YXY-mL-Ll3" firstAttribute="top" secondItem="9Xa-BH-x6D" secondAttribute="bottom" constant="10" id="lhT-mk-J70"/>
+                            <constraint firstItem="9Xa-BH-x6D" firstAttribute="top" secondItem="2KJ-0r-4g8" secondAttribute="bottom" constant="10" id="liQ-si-mFk"/>
+                            <constraint firstItem="NVF-rJ-QW5" firstAttribute="trailing" secondItem="YXY-mL-Ll3" secondAttribute="trailing" constant="279" id="q35-y6-M29"/>
+                            <constraint firstItem="9Xa-BH-x6D" firstAttribute="top" secondItem="kyD-SW-aai" secondAttribute="top" constant="209" id="qjx-4G-3IZ"/>
+                            <constraint firstItem="NVF-rJ-QW5" firstAttribute="trailing" secondItem="2KJ-0r-4g8" secondAttribute="trailing" constant="20" id="z8I-v1-Ib2"/>
+                            <constraint firstItem="2KJ-0r-4g8" firstAttribute="top" secondItem="Lx5-RS-884" secondAttribute="bottom" constant="8" id="zBB-dC-LvD"/>
+                            <constraint firstItem="YXY-mL-Ll3" firstAttribute="leading" secondItem="NVF-rJ-QW5" secondAttribute="leading" constant="16" id="zgt-Rt-REP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NVF-rJ-QW5"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Qxa-p9-lwE" appends="YES" id="aZu-cc-OUQ"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Item" id="pSN-ae-Jbc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lV9-vE-NvE">
+                            <connections>
+                                <action selector="doneBarButton:" destination="rtc-oT-Q0B" id="2w4-jL-3qW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descption" destination="9Xa-BH-x6D" id="zZa-cz-DRC"/>
+                        <outlet property="name" destination="Lx5-RS-884" id="4xO-rE-5kF"/>
+                        <outlet property="price" destination="2KJ-0r-4g8" id="Kfo-Nc-vCA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QP-9U-YWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Qxa-p9-lwE">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="rtc-oT-Q0B" id="FZi-i0-ulh"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3502.898550724638" y="-350.22321428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="c4F-CE-1WZ">
