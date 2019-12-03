@@ -9,6 +9,10 @@
 import Foundation
 
 
+//IDS and Keys
+public let kFILEREREFERNCE = "gs://ecommerce-app-1aecb.appspot.com"
+
+
 //Firebase Headers
 public let kUser_Path = "User"
 public let kCategory_Path = "Category"
